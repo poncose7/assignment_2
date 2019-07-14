@@ -1,0 +1,123 @@
+:root{
+	main-color: #1da1f2;
+	dark-color: #14171a;
+	footer-link-color:#aab8c2 ;
+	footer-link-border-color: #e6ecf0;
+
+}
+*,*::after ,*::before{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+p,h1,h2,h3,span{
+	font-family: open sans sans-serif;
+}
+.container{
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 85vh 15vh;
+}
+/** start left_box **/
+.container .left_box{
+	background-color:#1da1f2;
+	grid-column: 1 / 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.container .left_box ul li{
+	list-style: none;
+	font-size: 18px;
+	line-height: 24px;
+	margin: 50px 0px;
+	font-weight: bold;
+	color: #fff;
+}
+.container .left_box ul li .icon{
+	font-size: 22px;
+	margin-right: 10px;
+}
+/** end left_box **/
+/** start right_box **/
+.container .right_box{
+	background-color: #fff;
+	grid-column: 2 / -1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.container .right_box .card{
+	min-width: 300px;
+	padding: 0px 60px;
+}
+.container .right_box .card .head{
+	display: flex;
+	justify-content: space-between;
+}
+.container .right_box .card .head .logo-icon{
+	font-size: 3em;
+	color: #1da1f2;
+}
+.container .right_box .card h1{
+	font-size: 27px;
+	line-height: 32px;
+	color: #14171a;
+}
+.container .right_box .card p{
+	font-size: 16px;
+	font-weight: bold;
+	color: #14171a;
+}
+/** end right_box **/
+/** start bottom box **/
+.container .bottom_box{
+	border-top: 1px solid #e6ecf0;
+	grid-column: 1 / -1;
+}
+.container .bottom_box ul{
+	text-align: center;
+}
+.container .bottom_box ul li{
+	display: inline-block;
+	margin: 0px 5px;
+}
+.container .bottom_box ul li a{
+	text-decoration: none;
+	font-size: 12px;
+	color:#aab8c2;
+}
+.container .bottom_box ul li a:hover{
+	text-decoration: underline;
+}
+/** end bottom box **/
+/*** buttons ***/
+button.btn{
+	display: block;
+	font-size: 14px;
+	line-height: 20px;
+	border: none;
+	outline: none;
+	padding: 6px 16px;
+	border-radius: 100px;
+	font-weight: bold;
+
+}
+button.block{
+	width: 100%;
+	margin-bottom: .8rem;
+}
+button.primary{
+	background:#1da1f2;
+	color: #fff; 
+}
+button.outline{
+	background: #fff;
+	color: #1da1f2;
+	border: 1px solid #1da1f2;
+}
